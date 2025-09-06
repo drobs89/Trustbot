@@ -1,0 +1,3 @@
+# not necessary for static, but future-proof
+node_modules/
+.DS_Store
