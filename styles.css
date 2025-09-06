@@ -1,1 +1,100 @@
-body { font-family: Arial; background: #fff; padding: 20px; }
+/* ==============================
+   TrustBot Alpha — Stylesheet
+   Identifier: DRR-TRUSTBOT-ALPHA-CEC1-SENTINEL-FCPS1.0-2025-09-06
+   Owner: Devon R. Robinson Private Trust
+   ============================== */
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  margin: 2rem;
+  max-width: 900px;
+  line-height: 1.6;
+  background: #fafafa;
+  color: #222;
+}
+
+/* Card containers */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Typography */
+h1 {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+h2, h3 {
+  margin-top: 1.25rem;
+  font-weight: 600;
+}
+
+/* Labels and inputs */
+label {
+  display: block;
+  font-weight: 600;
+  margin-top: .75rem;
+}
+input, textarea, select {
+  width: 100%;
+  padding: .6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: .25rem;
+  font-size: 1rem;
+}
+
+/* Buttons */
+button {
+  padding: .8rem 1rem;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+}
+button.primary {
+  background: #111;
+  color: #fff;
+  transition: background 0.2s ease-in-out;
+}
+button.primary:hover {
+  background: #333;
+}
+
+/* Hints, meta text */
+.hint {
+  color: #666;
+  font-size: .9rem;
+}
+small.code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  background: #f6f6f6;
+  padding: .2rem .4rem;
+  border-radius: 6px;
+}
+
+/* Draft output */
+.doc {
+  font-family: Georgia, serif;
+}
+.doc .stamp {
+  margin-top: 1rem;
+  font-size: .9rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  color: #444;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  body {
+    margin: 1rem;
+  }
+  h1 {
+    font-size: 1.4rem;
+  }
+}
