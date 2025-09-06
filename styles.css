@@ -98,3 +98,19 @@ small.code {
     font-size: 1.4rem;
   }
 }
+/* Secondary button */
+button.secondary {
+  background: #eaeaea;
+  color: #111;
+}
+button.secondary:hover { background: #dcdcdc; }
+
+/* Print: only print the draft */
+@media print {
+  body { background: #fff; margin: 0; }
+  header.card, section.card:first-of-type { display: none !important; }
+  #output.card { border: none; box-shadow: none; margin: 0; padding: 0; }
+  #output.card .doc { padding: 0 0; }
+}
+/* A4 margins; browsers may approximate on mobile */
+@page { size: A4; margin: 20mm; }
