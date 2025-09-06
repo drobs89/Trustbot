@@ -182,3 +182,9 @@ btn.addEventListener("click", async ()=>{
   // set provenance headers via meta tags (already on page) — visible stamp is above
   // Note: static pages can’t set HTTP headers; the identifier is embedded in DOM & output.
 });
+Enable PDF button and wire it to print 
+if (pdfBtn){
+    pdfBtn.disabled = false;
+    pdfBtn.onclick = () => printDraft(out.innerHTML);
+}
+});
