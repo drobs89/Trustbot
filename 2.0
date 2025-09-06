@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>TrustBot Alpha (Static)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="trustbot-identifier" content="DRR-TRUSTBOT-ALPHA-CEC1-SENTINEL-FCPS1.0-2025-09-06">
+  <meta name="owner" content="Devon R. Robinson Private Trust">
+  <meta name="confidentiality" content="Confidential & Proprietary — Distribution Restricted">
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 2rem; max-width: 900px; }
+    .card { border: 1px solid #ddd; border-radius: 12px; padding: 1.25rem; margin-bottom: 1rem; }
+    label { display:block; font-weight:600; margin-top: .75rem; }
+    input, textarea, select { width:100%; padding:.6rem; border:1px solid #ccc; border-radius:8px; margin-top:.25rem; }
+    button { padding:.8rem 1rem; border:0; border-radius:10px; cursor:pointer; }
+    .primary { background:#111; color:#fff; }
+    .hint { color:#666; font-size:.9rem; }
+    header { margin-bottom: 1.5rem; }
+    small.code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; background:#f6f6f6; padding:.2rem .4rem; border-radius:6px; }
+    .doc { font-family: Georgia, serif; }
+    hr { margin: 1.5rem 0; }
+  </style>
+</head>
+<body>
+  <header class="card">
+    <h1>TrustBot Alpha (Static)</h1>
+    <p class="hint">Identifier: <small class="code" id="idStamp"></small></p>
+    <p class="hint">Owner: <span id="ownerStamp"></span></p>
+    <p class="hint"><em id="disclaimer"></em></p>
+  </header>
+
+  <section class="card">
+    <label>Trust Type</label>
+    <select id="trustType"></select>
+    <div id="dynamicFields"></div>
+    <div style="margin-top:1rem;">
+      <button class="primary" id="generateBtn">Generate Draft</button>
+    </div>
+  </section>
+
+  <section id="output" class="card doc" hidden></section>
+
+  <script src="trustbot.js"></script>
+</body>
+</html>
