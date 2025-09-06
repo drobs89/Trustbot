@@ -30,16 +30,16 @@
   </header>
 
   <section class="card">
-    <label>Trust Type</label>
-    <select id="trustType"></select>
-    <div id="dynamicFields"></div>
-    <div style="margin-top:1rem;">
-      <button class="primary" id="generateBtn">Generate Draft</button>
-    </div>
-  </section>
+  <label>Trust Type</label>
+  <select id="trustType"></select>
+  <div id="dynamicFields"></div>
+  <div style="margin-top:1rem; display:flex; gap:.5rem; flex-wrap:wrap;">
+    <button class="primary" id="generateBtn">Generate Draft</button>
+    <button class="secondary" id="pdfBtn" disabled>Download PDF</button>
+  </div>
+</section>
 
-  <section id="output" class="card doc" hidden></section>
+<section id="output" class="card doc" hidden></section>
 
-  <script src="trustbot.js"></script>
-</body>
-</html>
+<!-- TrustBot Logic -->
+<script src="trustbot.js"></script>
